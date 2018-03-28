@@ -7,7 +7,7 @@
     </head>
     <body>
         <form method="Post" action ="Calculadora.php">
-            Num1: <input type="number" name="num1" value="132455442"><br>
+            Num1: <input type="number" name="num1" value=""><br>
             Num2: <input type="number" name="num2" value=""><br>
             <br> 
             <select name= "operacoes"> 

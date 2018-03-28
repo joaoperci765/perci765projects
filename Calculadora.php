@@ -3,12 +3,13 @@ include ("./paginaCalculadora.php");
 
  if (isset($POST)){
      
-    $valor1 = $_POST['num1'];
-    $valor2 = $_POST['num2'];
-    $operacoes = $_POST['operacoes'];
+    $valor1 = $POST['num1'];
+    $valor2 = $POST['num2'];
+    $operacoes = $POST['operacoes'];
     $result;
     
-   
+    function validar(){
+       return is_numeric($valor1)&& is_numeric($valor2);
     }
     function funcaoSomar(){
         
