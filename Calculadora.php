@@ -8,11 +8,11 @@ include ("./paginaCalculadora.php");
     $operacoes = $POST['operacoes'];
     $result;
     
-    function validar(){
-       return is_numeric($valor1)&& is_numeric($valor2);
-    }
+  
+     is_numeric($valor1)&& is_numeric($valor2);
+    
+    
     function funcaoSomar(){
-        
         $result = $valor1 + $valor2;
         echo $result;
     }
@@ -30,21 +30,21 @@ include ("./paginaCalculadora.php");
         echo $result;
     }
     
-    if ($operacoes == 'soma'){
+        if ($operacoes == 'soma'){
         funcaoSomar();
     }
-    else if($operacoes == 'subtracao'){
+        else if($operacoes == 'subtracao'){
         funcaoSubtrair(); 
     }
-              else if($operacoes == 'multiplicacao'){
-                      funcaoMultiplicar();
+        else if($operacoes == 'multiplicacao'){
+        funcaoMultiplicar();
        
     }
-              else if($operacoes == 'divisao'){
-                      funcaoDividir();
+        else if($operacoes == 'divisao'){
+        funcaoDividir();
     }
  }
-       
+ 
                       
      
 
