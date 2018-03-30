@@ -6,13 +6,13 @@
         <title> Calculadora PHP </title>
     </head>
     <body>
-        <form method="Post" action ="Calculadora.php">
+        <form method="post" action ="Calculadora.php">
             Num1: <input type="number" name="num1" value=""><br>
             Num2: <input type="number" name="num2" value=""><br>
-            <br> 
+             
             <select name= "operacoes"> 
-                <option value="soma">soma</option>
-                <option value="subtrair">subtracao</option>
+                <option value="somar">soma</option>
+                <option value="subtrair">subtracao</option>   
                 <option value ="dividir">divisao</option>
                 <option value="multiplicar"> multiplicacao</option>
              </select><br> 
