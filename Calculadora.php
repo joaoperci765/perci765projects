@@ -6,35 +6,34 @@ include ("./paginaCalculadora.php");
     $valor1 = $_POST['num1'];
     $valor2 = $_POST['num2'];
     $operacoes = $_POST['operacoes'];
-     
+         
         if ($operacoes == 'somar'){
-        funcaoSomar();
+        return funcaoSomar();
     }
-        else if($operacoes == 'subtracao'){
-        funcaoSubtrair(); 
+         if($operacoes == 'subtrair'){
+        return funcaoSubtrair();
     }
-        else if($operacoes == 'multiplicacao'){
-        funcaoMultiplicar();
+        else if($operacoes == 'multiplicar'){
+        return funcaoMultiplicar();
     }
-        else if($operacoes == 'divisao'){
-        funcaoDividir();
+        else if($operacoes == 'dividir'){
+        return funcaoDividir();
     }
     //Expressões das Funções:
     
-    function validar($valor1,$valor2){
-    return is_numeric($valor1)&& is_numeric($valor2);
+     function validar($valor1,$valor2){
+     return is_numeric($valor1)&& is_numeric($valor2);
     }
 
     function funcaoSomar($valor1,$valor2){
-      validar();
-      $result =($valor1 - $valor2);
-      return $result;
+        validar();
+        $result =($valor1 + $valor2);
+        echo $result;
     }
-
     function funcaoSubtrair($valor1,$valor2){
         validar();
         $result =($valor1 - $valor2);
-        echo $result;   
+        echo $result; 
     }
     function funcaoMultiplicar($valor1,$valor2){
         validar();
@@ -49,7 +48,7 @@ include ("./paginaCalculadora.php");
     }
 
  }
- ?>
+ 
  
 
                       
