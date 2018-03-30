@@ -8,17 +8,25 @@ include ("./paginaCalculadora.php");
     $operacoes = $_POST['operacoes'];
          
         if ($operacoes == 'somar'){
-        return funcaoSomar();
+        //return funcaoSomar();
+         $result = ($valor1 + $valor2);
+         echo $result;
     }
          if($operacoes == 'subtrair'){
-        return funcaoSubtrair();
+        //return funcaoSubtrair();
+         $result = ($valor1 - $valor2);
+         echo $result;
     }
         else if($operacoes == 'multiplicar'){
-        return funcaoMultiplicar();
+        //return funcaoMultiplicar();
+         $result = ($valor1 * $valor2);
+         echo $result;
     }
         else if($operacoes == 'dividir'){
-        return funcaoDividir();
-    }
+        //return funcaoDividir();
+         $result = ($valor1 / $valor2);
+         echo $result;
+        }
     //Expressões das Funções:
     
      function validar($valor1,$valor2){
